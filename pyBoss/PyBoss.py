@@ -162,7 +162,7 @@ text_list = zip(employee_ID,first_name,last_name,dob_reformat,ssn_reformat,st_ab
 print(text_list)
 
 with open('employee_modified.csv', 'w',newline='') as myfile:
-    wr = csv.writer(myfile)
-    wr.writerow(["Emp ID", "First Name", "Last Name", "DOB","SSN","State"])
-    wr.writerows(text_list)
+    wf = csv.writer(myfile)
+    wf.writerow(["Emp ID", "First Name", "Last Name", "DOB","SSN","State"])
+    wf.writerows(text_list)
 
